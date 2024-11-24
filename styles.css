@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+main{
+    /* height: 100%;  comment out so that it covers whole page and not get resticted due to image*/ 
+    width: 100%;
+    background-color: red;
+}
+
+
+nav{
+    background-color: transparent;
+    padding: 40px 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* TO give gap between elements*/
+}
+nav h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+nav a{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+
+
+section{
+    /* background-color: red; */
+    padding: 40px 100px;
+
+}
+
+
+section .hero-text1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.hero-text1 h1{
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 60px;
+}
+ 
+.hero-text1 .video{
+    background-image: url("https://images.unsplash.com/photo-1714859343414-9f235a0f9fb2?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: cover;
+    /* background-position: center; */
+    height: 80px;
+    width: 320px;
+    background-color: #9DDE8B;
+    border-radius: 40px;
+    padding:6px;
+}
+.video .play{
+    width: 90px;
+    height: 100%;
+    border-radius: 100px;
+    background-color: #006769;
+    border: 2px solid #E6FF94;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.play i{
+    font-size: 30px;
+    color: #E6FF94;
+}
+
+
+section .hero-text2{
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+.hero-text2 h1{
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 60px;
+}
+
+.hero-text2 p{
+    margin-top: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    width: 300px;
+}
+
+.image{
+    width: 90%;
+    margin-top: 30px;
+    margin-left: 5%;
+    height: 800px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background-color: black;
+    background-image: url("https://images.unsplash.com/photo-1728106700425-452623230402?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: cover;
+    background-position: center;
+    position: relative; /*TO MAKE ARROW RELATE TO THIS{parent}*/
+}
+
+.image .arrow{
+    position: absolute;/*TO MAKE ARROW follow around image tag{it's parent div}*/
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background-color: #006769;
+    top:-20px;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E6FF94;
+}
+
+.arrow i{
+    font-size: 60px;
+    
+}
